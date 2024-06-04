@@ -7,10 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet var imageBG: UIView!
     
+    @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,4 +20,6 @@ class ViewController: UIViewController {
 
 
 }
+
+
 
