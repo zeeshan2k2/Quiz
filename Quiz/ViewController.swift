@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var imageBG: UIView!
     
+    
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
         tableViewQuestion.delegate = self
         tableViewQuestion.dataSource = self
         continueButton.layer.cornerRadius = 8
+        
     }
 }
 

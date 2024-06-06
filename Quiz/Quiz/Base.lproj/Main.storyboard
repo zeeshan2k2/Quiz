@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HfR-sz-pYt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j51-h3-h9k">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -209,6 +209,60 @@
             </objects>
             <point key="canvasLocation" x="1541.2213740458014" y="3.5211267605633805"/>
         </scene>
+        <!--ShareVC-->
+        <scene sceneID="PFQ-rg-LAK">
+            <objects>
+                <viewController id="j51-h3-h9k" customClass="ShareVC" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sUE-aB-Mbe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share bg" translatesAutoresizingMaskIntoConstraints="NO" id="YuJ-hj-GZl">
+                                <rect key="frame" x="0.0" y="-44" width="393" height="900"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odJ-qy-k7x">
+                                <rect key="frame" x="315" y="59" width="62" height="52"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="share close btn"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3R-P7-QHf">
+                                <rect key="frame" x="51" y="284" width="291" height="432"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrk-cm-dkW">
+                                <rect key="frame" x="28" y="159" width="337" height="546"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fRX-N9-3oT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="odJ-qy-k7x" firstAttribute="leading" secondItem="YuJ-hj-GZl" secondAttribute="trailing" constant="-78" id="0Uc-Hp-41F"/>
+                            <constraint firstItem="YuJ-hj-GZl" firstAttribute="top" secondItem="fRX-N9-3oT" secondAttribute="top" constant="-103" id="2CV-dH-c1y"/>
+                            <constraint firstItem="l3R-P7-QHf" firstAttribute="top" secondItem="odJ-qy-k7x" secondAttribute="bottom" constant="173" id="HVD-0N-2cb"/>
+                            <constraint firstItem="yrk-cm-dkW" firstAttribute="top" secondItem="odJ-qy-k7x" secondAttribute="bottom" constant="48" id="NKk-zj-HEg"/>
+                            <constraint firstItem="YuJ-hj-GZl" firstAttribute="top" secondItem="odJ-qy-k7x" secondAttribute="bottom" constant="-155" id="P6P-9O-J20"/>
+                            <constraint firstItem="fRX-N9-3oT" firstAttribute="bottom" secondItem="l3R-P7-QHf" secondAttribute="bottom" constant="102" id="U2G-gG-86g"/>
+                            <constraint firstItem="fRX-N9-3oT" firstAttribute="trailing" secondItem="yrk-cm-dkW" secondAttribute="trailing" constant="28" id="eJg-uA-ePA"/>
+                            <constraint firstItem="fRX-N9-3oT" firstAttribute="bottom" secondItem="YuJ-hj-GZl" secondAttribute="bottom" constant="-38" id="oBl-3j-vT8"/>
+                            <constraint firstItem="l3R-P7-QHf" firstAttribute="leading" secondItem="fRX-N9-3oT" secondAttribute="leading" constant="51" id="oNY-iR-RUK"/>
+                            <constraint firstItem="fRX-N9-3oT" firstAttribute="trailing" secondItem="YuJ-hj-GZl" secondAttribute="trailing" id="qje-uH-im6"/>
+                            <constraint firstItem="YuJ-hj-GZl" firstAttribute="leading" secondItem="fRX-N9-3oT" secondAttribute="leading" id="vNn-aE-xL2"/>
+                            <constraint firstItem="fRX-N9-3oT" firstAttribute="bottom" secondItem="yrk-cm-dkW" secondAttribute="bottom" constant="113" id="wC1-fo-Rxb"/>
+                            <constraint firstItem="fRX-N9-3oT" firstAttribute="trailing" secondItem="l3R-P7-QHf" secondAttribute="trailing" constant="51" id="xqt-5a-yeN"/>
+                            <constraint firstItem="yrk-cm-dkW" firstAttribute="leading" secondItem="fRX-N9-3oT" secondAttribute="leading" constant="28" id="yho-cA-v0p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ShC-uD-Hk8"/>
+                    <connections>
+                        <outlet property="bgView" destination="l3R-P7-QHf" id="1Nb-cr-9na"/>
+                        <outlet property="mainView" destination="yrk-cm-dkW" id="bdd-cW-7H3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSH-KE-yWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2812.1495327102803" y="3.2397408207343417"/>
+        </scene>
         <!--Item-->
         <scene sceneID="jmN-Rq-iWq">
             <objects>
@@ -232,6 +286,8 @@
     <resources>
         <image name="blue bg" width="360" height="194"/>
         <image name="edit button" width="30" height="30"/>
+        <image name="share bg" width="360" height="800"/>
+        <image name="share close btn" width="38" height="38"/>
         <systemColor name="separatorColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
