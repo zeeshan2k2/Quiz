@@ -230,20 +230,46 @@
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrk-cm-dkW">
-                                <rect key="frame" x="28" y="159" width="337" height="546"/>
+                                <rect key="frame" x="28" y="196" width="337" height="509"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgO-y8-TLG">
+                                        <rect key="frame" x="31" y="92" width="275" height="43"/>
+                                        <color key="backgroundColor" red="0.20784313725490194" green="0.29803921568627451" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="kga-2H-53W"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Science Quiz">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="24"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="qgO-y8-TLG" firstAttribute="leading" secondItem="yrk-cm-dkW" secondAttribute="leading" constant="31" id="bex-YC-p8M"/>
+                                    <constraint firstAttribute="trailing" secondItem="qgO-y8-TLG" secondAttribute="trailing" constant="31" id="i4U-Cb-Hgb"/>
+                                </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quiz game logo" translatesAutoresizingMaskIntoConstraints="NO" id="1r8-uq-5MQ">
+                                <rect key="frame" x="120" y="134" width="153" height="119"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fRX-N9-3oT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="odJ-qy-k7x" firstAttribute="leading" secondItem="YuJ-hj-GZl" secondAttribute="trailing" constant="-78" id="0Uc-Hp-41F"/>
                             <constraint firstItem="YuJ-hj-GZl" firstAttribute="top" secondItem="fRX-N9-3oT" secondAttribute="top" constant="-103" id="2CV-dH-c1y"/>
+                            <constraint firstItem="1r8-uq-5MQ" firstAttribute="leading" secondItem="fRX-N9-3oT" secondAttribute="leading" constant="120" id="G4k-ow-4k9"/>
                             <constraint firstItem="l3R-P7-QHf" firstAttribute="top" secondItem="odJ-qy-k7x" secondAttribute="bottom" constant="173" id="HVD-0N-2cb"/>
-                            <constraint firstItem="yrk-cm-dkW" firstAttribute="top" secondItem="odJ-qy-k7x" secondAttribute="bottom" constant="48" id="NKk-zj-HEg"/>
+                            <constraint firstItem="yrk-cm-dkW" firstAttribute="top" secondItem="odJ-qy-k7x" secondAttribute="bottom" constant="85" id="NKk-zj-HEg"/>
                             <constraint firstItem="YuJ-hj-GZl" firstAttribute="top" secondItem="odJ-qy-k7x" secondAttribute="bottom" constant="-155" id="P6P-9O-J20"/>
                             <constraint firstItem="fRX-N9-3oT" firstAttribute="bottom" secondItem="l3R-P7-QHf" secondAttribute="bottom" constant="102" id="U2G-gG-86g"/>
+                            <constraint firstItem="qgO-y8-TLG" firstAttribute="top" secondItem="1r8-uq-5MQ" secondAttribute="bottom" constant="35" id="Vu4-Mf-B6F"/>
+                            <constraint firstItem="1r8-uq-5MQ" firstAttribute="top" secondItem="fRX-N9-3oT" secondAttribute="top" constant="75" id="aop-zF-3LP"/>
                             <constraint firstItem="fRX-N9-3oT" firstAttribute="trailing" secondItem="yrk-cm-dkW" secondAttribute="trailing" constant="28" id="eJg-uA-ePA"/>
+                            <constraint firstItem="l3R-P7-QHf" firstAttribute="top" secondItem="1r8-uq-5MQ" secondAttribute="bottom" constant="31" id="gJx-Jb-1sf"/>
+                            <constraint firstItem="fRX-N9-3oT" firstAttribute="trailing" secondItem="1r8-uq-5MQ" secondAttribute="trailing" constant="120" id="iji-t9-cog"/>
                             <constraint firstItem="fRX-N9-3oT" firstAttribute="bottom" secondItem="YuJ-hj-GZl" secondAttribute="bottom" constant="-38" id="oBl-3j-vT8"/>
                             <constraint firstItem="l3R-P7-QHf" firstAttribute="leading" secondItem="fRX-N9-3oT" secondAttribute="leading" constant="51" id="oNY-iR-RUK"/>
                             <constraint firstItem="fRX-N9-3oT" firstAttribute="trailing" secondItem="YuJ-hj-GZl" secondAttribute="trailing" id="qje-uH-im6"/>
@@ -257,11 +283,12 @@
                     <connections>
                         <outlet property="bgView" destination="l3R-P7-QHf" id="1Nb-cr-9na"/>
                         <outlet property="mainView" destination="yrk-cm-dkW" id="bdd-cW-7H3"/>
+                        <outlet property="titleBtn" destination="qgO-y8-TLG" id="uP4-51-MbX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSH-KE-yWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812.1495327102803" y="3.2397408207343417"/>
+            <point key="canvasLocation" x="2809.9236641221373" y="2.8169014084507045"/>
         </scene>
         <!--Item-->
         <scene sceneID="jmN-Rq-iWq">
@@ -286,6 +313,7 @@
     <resources>
         <image name="blue bg" width="360" height="194"/>
         <image name="edit button" width="30" height="30"/>
+        <image name="quiz game logo" width="150" height="150"/>
         <image name="share bg" width="360" height="800"/>
         <image name="share close btn" width="38" height="38"/>
         <systemColor name="separatorColor">
