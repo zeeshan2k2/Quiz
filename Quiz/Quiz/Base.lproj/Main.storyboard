@@ -315,6 +315,24 @@
                                         <color key="textColor" red="0.20784313730000001" green="0.29803921570000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4e-Ro-NiJ">
+                                        <rect key="frame" x="27" y="436.66666666666663" width="283" height="42.666666666666686"/>
+                                        <color key="backgroundColor" red="0.2627450980392157" green="0.63529411764705879" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Share Links">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teM-rT-UZN">
+                                        <rect key="frame" x="27" y="378" width="283" height="42.666666666666686"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.29803921570000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Challange Friends">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -322,22 +340,28 @@
                                     <constraint firstItem="rlx-pb-peo" firstAttribute="leading" secondItem="yrk-cm-dkW" secondAttribute="leading" constant="31" id="4x1-FK-kuO"/>
                                     <constraint firstItem="NFu-sD-a4i" firstAttribute="top" secondItem="79f-7r-kmx" secondAttribute="bottom" constant="13" id="4x6-cD-lkU"/>
                                     <constraint firstAttribute="trailing" secondItem="NFu-sD-a4i" secondAttribute="trailing" constant="27" id="A4A-FJ-lmr"/>
+                                    <constraint firstAttribute="trailing" secondItem="v4e-Ro-NiJ" secondAttribute="trailing" constant="27" id="APx-DQ-QfL"/>
                                     <constraint firstItem="79f-7r-kmx" firstAttribute="top" secondItem="pze-GU-uiH" secondAttribute="bottom" constant="57.333333333333314" id="BfE-rd-a7v"/>
+                                    <constraint firstItem="teM-rT-UZN" firstAttribute="leading" secondItem="yrk-cm-dkW" secondAttribute="leading" constant="27" id="DTJ-H4-zeh"/>
                                     <constraint firstItem="NFu-sD-a4i" firstAttribute="leading" secondItem="yrk-cm-dkW" secondAttribute="leading" constant="31" id="GNI-lo-88p"/>
                                     <constraint firstItem="ItN-Vy-uQ2" firstAttribute="top" secondItem="k0b-6R-YfQ" secondAttribute="bottom" constant="32.666666666666657" id="JF8-zy-dF8"/>
                                     <constraint firstAttribute="trailing" secondItem="pze-GU-uiH" secondAttribute="trailing" constant="31" id="KgU-xn-gxK"/>
                                     <constraint firstItem="pze-GU-uiH" firstAttribute="top" secondItem="yrk-cm-dkW" secondAttribute="top" constant="226" id="L6H-lQ-RVU"/>
+                                    <constraint firstAttribute="bottom" secondItem="v4e-Ro-NiJ" secondAttribute="bottom" constant="29.666666666666686" id="Uc3-0H-0Xe"/>
                                     <constraint firstItem="ItN-Vy-uQ2" firstAttribute="top" secondItem="pze-GU-uiH" secondAttribute="bottom" constant="12" id="VxY-Re-oVG"/>
                                     <constraint firstAttribute="trailing" secondItem="79f-7r-kmx" secondAttribute="trailing" constant="31" id="Xa6-Pt-aEL"/>
                                     <constraint firstItem="79f-7r-kmx" firstAttribute="top" secondItem="uvE-ya-tAc" secondAttribute="bottom" constant="23" id="Z4k-4P-JxD"/>
                                     <constraint firstItem="79f-7r-kmx" firstAttribute="leading" secondItem="yrk-cm-dkW" secondAttribute="leading" constant="31" id="aDc-gw-9ot"/>
                                     <constraint firstItem="qgO-y8-TLG" firstAttribute="leading" secondItem="yrk-cm-dkW" secondAttribute="leading" constant="31" id="bex-YC-p8M"/>
+                                    <constraint firstAttribute="trailing" secondItem="teM-rT-UZN" secondAttribute="trailing" constant="27" id="cCM-fn-QOQ"/>
                                     <constraint firstItem="uvE-ya-tAc" firstAttribute="top" secondItem="pze-GU-uiH" secondAttribute="bottom" constant="18" id="eWi-6f-6by"/>
+                                    <constraint firstItem="v4e-Ro-NiJ" firstAttribute="leading" secondItem="yrk-cm-dkW" secondAttribute="leading" constant="27" id="eqR-ac-5pv"/>
                                     <constraint firstAttribute="trailing" secondItem="ItN-Vy-uQ2" secondAttribute="trailing" constant="35" id="hq0-bi-XyE"/>
                                     <constraint firstAttribute="trailing" secondItem="qgO-y8-TLG" secondAttribute="trailing" constant="31" id="i4U-Cb-Hgb"/>
                                     <constraint firstAttribute="trailing" secondItem="rlx-pb-peo" secondAttribute="trailing" constant="33.333333333333314" id="jLs-h2-a8Q"/>
                                     <constraint firstItem="pze-GU-uiH" firstAttribute="top" secondItem="rlx-pb-peo" secondAttribute="bottom" constant="19.666666666666657" id="mUF-Sw-MCJ"/>
                                     <constraint firstItem="uvE-ya-tAc" firstAttribute="leading" secondItem="yrk-cm-dkW" secondAttribute="leading" constant="30.999999999999986" id="tm7-ym-kg1"/>
+                                    <constraint firstItem="v4e-Ro-NiJ" firstAttribute="top" secondItem="teM-rT-UZN" secondAttribute="bottom" constant="15.999999999999943" id="yvt-cL-3Md"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quiz game logo" translatesAutoresizingMaskIntoConstraints="NO" id="1r8-uq-5MQ">
@@ -371,13 +395,15 @@
                     <navigationItem key="navigationItem" id="ShC-uD-Hk8"/>
                     <connections>
                         <outlet property="bgView" destination="l3R-P7-QHf" id="1Nb-cr-9na"/>
+                        <outlet property="challangeFriendsBtn" destination="teM-rT-UZN" id="Ifb-3J-mpe"/>
                         <outlet property="mainView" destination="yrk-cm-dkW" id="bdd-cW-7H3"/>
+                        <outlet property="shareLinksBtn" destination="v4e-Ro-NiJ" id="YfJ-1f-l7a"/>
                         <outlet property="titleBtn" destination="qgO-y8-TLG" id="uP4-51-MbX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSH-KE-yWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2805.7971014492755" y="2.0089285714285712"/>
+            <point key="canvasLocation" x="2803.8167938931297" y="1.4084507042253522"/>
         </scene>
         <!--Item-->
         <scene sceneID="jmN-Rq-iWq">

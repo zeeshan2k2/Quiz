@@ -16,12 +16,18 @@ class ShareVC: UIViewController {
     
     @IBOutlet var titleBtn: UIButton!
     
+    @IBOutlet var shareLinksBtn: UIButton!
+    
+    @IBOutlet var challangeFriendsBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         bgView.layer.cornerRadius = 15
         mainView.layer.cornerRadius = 15
         titleBtn.layer.cornerRadius = 10
+        shareLinksBtn.layer.cornerRadius = 10
+        challangeFriendsBtn.layer.cornerRadius = 10
 
     }
 
