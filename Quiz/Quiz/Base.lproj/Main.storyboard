@@ -426,11 +426,23 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="notif button" title=""/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkT-n8-L8z">
+                                <rect key="frame" x="26" y="187" width="174" height="164"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Create Quiz" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24d-bs-j2W">
+                                <rect key="frame" x="194" y="187" width="174" height="164"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Join in Quiz" title=""/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AFm-ul-bsr"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="AFm-ul-bsr" firstAttribute="trailing" secondItem="24d-bs-j2W" secondAttribute="trailing" constant="25" id="5Mc-rZ-ra7"/>
                             <constraint firstItem="5wF-Ta-Fri" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" constant="10" id="DEt-mS-gMO"/>
+                            <constraint firstItem="24d-bs-j2W" firstAttribute="top" secondItem="JLb-HH-7Wz" secondAttribute="bottom" constant="-81" id="EGT-yt-HuH"/>
                             <constraint firstItem="AFm-ul-bsr" firstAttribute="bottom" secondItem="JLb-HH-7Wz" secondAttribute="bottom" constant="550" id="GKb-e5-Rsx"/>
                             <constraint firstItem="JLb-HH-7Wz" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" id="Hgk-dO-83S"/>
                             <constraint firstItem="2Ui-Ws-POd" firstAttribute="top" secondItem="AFm-ul-bsr" secondAttribute="top" id="Uki-zR-VXc"/>
@@ -438,6 +450,8 @@
                             <constraint firstItem="AFm-ul-bsr" firstAttribute="trailing" secondItem="2Ui-Ws-POd" secondAttribute="trailing" constant="10" id="c3N-KP-g9k"/>
                             <constraint firstItem="JLb-HH-7Wz" firstAttribute="centerX" secondItem="5hV-Wl-WzW" secondAttribute="centerX" id="fhK-Xn-vN4"/>
                             <constraint firstItem="JLb-HH-7Wz" firstAttribute="top" secondItem="5hV-Wl-WzW" secondAttribute="topMargin" constant="-59" id="hpP-Ng-cyI"/>
+                            <constraint firstItem="AkT-n8-L8z" firstAttribute="top" secondItem="JLb-HH-7Wz" secondAttribute="bottom" constant="-81" id="npK-CO-42I"/>
+                            <constraint firstItem="AkT-n8-L8z" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" constant="26" id="sFH-tD-0UZ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -466,6 +480,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Create Quiz" width="150" height="150"/>
+        <image name="Join in Quiz" width="150" height="150"/>
         <image name="blue bg" width="360" height="194"/>
         <image name="edit button" width="30" height="30"/>
         <image name="main page bg" width="360" height="238"/>
