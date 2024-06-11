@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C11596B52C188042002DB5B8 /* mainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11596B42C188042002DB5B8 /* mainPageVC.swift */; };
 		C17DFCB22C11331700DC2A33 /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DFCB12C11331700DC2A33 /* ShareVC.swift */; };
 		C1BD59262C0F5A090032C6C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD59252C0F5A090032C6C2 /* AppDelegate.swift */; };
 		C1BD59282C0F5A090032C6C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD59272C0F5A090032C6C2 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C11596B42C188042002DB5B8 /* mainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPageVC.swift; sourceTree = "<group>"; };
 		C17DFCB12C11331700DC2A33 /* ShareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
 		C1BD59222C0F5A090032C6C2 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BD59252C0F5A090032C6C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				C1BD59252C0F5A090032C6C2 /* AppDelegate.swift */,
 				C1BD59272C0F5A090032C6C2 /* SceneDelegate.swift */,
 				C1C098922C0F9135001C9560 /* questionCell.swift */,
+				C11596B42C188042002DB5B8 /* mainPageVC.swift */,
 				C17DFCB12C11331700DC2A33 /* ShareVC.swift */,
 				C1BD59292C0F5A090032C6C2 /* ViewController.swift */,
 				C1E2BD7A2C10BF7F00EEBC26 /* Main.storyboard */,
@@ -148,6 +151,7 @@
 				C1C098932C0F9135001C9560 /* questionCell.swift in Sources */,
 				C1BD59262C0F5A090032C6C2 /* AppDelegate.swift in Sources */,
 				C1BD59282C0F5A090032C6C2 /* SceneDelegate.swift in Sources */,
+				C11596B52C188042002DB5B8 /* mainPageVC.swift in Sources */,
 				C17DFCB22C11331700DC2A33 /* ShareVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

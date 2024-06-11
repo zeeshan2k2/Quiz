@@ -405,10 +405,10 @@
             </objects>
             <point key="canvasLocation" x="2803.8167938931297" y="1.4084507042253522"/>
         </scene>
-        <!--View Controller-->
+        <!--Main PageVC-->
         <scene sceneID="PrU-fB-93W">
             <objects>
-                <viewController id="79Q-Be-1hO" sceneMemberID="viewController">
+                <viewController id="79Q-Be-1hO" customClass="mainPageVC" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5hV-Wl-WzW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -427,7 +427,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="notif button" title=""/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkT-n8-L8z">
-                                <rect key="frame" x="26" y="187" width="174" height="164"/>
+                                <rect key="frame" x="25" y="187" width="174" height="164"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Create Quiz" title=""/>
                             </button>
@@ -436,24 +436,73 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Join in Quiz" title=""/>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zOm-Bx-gRS">
+                                <rect key="frame" x="52" y="236" width="58.333333333333343" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqF-41-IRh">
+                                        <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="21.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsc-L7-Lve">
+                                        <rect key="frame" x="0.0" y="21.666666666666686" width="58.333333333333336" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ccj-h4-zf8">
+                                <rect key="frame" x="221" y="236" width="55.333333333333314" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geB-WJ-by5">
+                                        <rect key="frame" x="0.0" y="0.0" width="55.333333333333336" height="21.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl2-Se-1jG">
+                                        <rect key="frame" x="0.0" y="21.666666666666686" width="55.333333333333336" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fek-hH-BBN">
+                                <rect key="frame" x="39" y="391" width="163.66666666666666" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AFm-ul-bsr"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="24d-bs-j2W" firstAttribute="leading" secondItem="ccj-h4-zf8" secondAttribute="trailing" constant="-82.333333333333314" id="4Bj-Oe-AEe"/>
                             <constraint firstItem="AFm-ul-bsr" firstAttribute="trailing" secondItem="24d-bs-j2W" secondAttribute="trailing" constant="25" id="5Mc-rZ-ra7"/>
+                            <constraint firstItem="Fek-hH-BBN" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" constant="39" id="9Qv-xq-xeP"/>
                             <constraint firstItem="5wF-Ta-Fri" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" constant="10" id="DEt-mS-gMO"/>
                             <constraint firstItem="24d-bs-j2W" firstAttribute="top" secondItem="JLb-HH-7Wz" secondAttribute="bottom" constant="-81" id="EGT-yt-HuH"/>
+                            <constraint firstItem="AkT-n8-L8z" firstAttribute="leading" secondItem="zOm-Bx-gRS" secondAttribute="trailing" constant="-85.333333333333343" id="GAX-2H-iNr"/>
                             <constraint firstItem="AFm-ul-bsr" firstAttribute="bottom" secondItem="JLb-HH-7Wz" secondAttribute="bottom" constant="550" id="GKb-e5-Rsx"/>
                             <constraint firstItem="JLb-HH-7Wz" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" id="Hgk-dO-83S"/>
+                            <constraint firstItem="24d-bs-j2W" firstAttribute="top" secondItem="ccj-h4-zf8" secondAttribute="bottom" constant="-97" id="Sar-Kj-CV1"/>
                             <constraint firstItem="2Ui-Ws-POd" firstAttribute="top" secondItem="AFm-ul-bsr" secondAttribute="top" id="Uki-zR-VXc"/>
+                            <constraint firstItem="AkT-n8-L8z" firstAttribute="top" secondItem="zOm-Bx-gRS" secondAttribute="bottom" constant="-97" id="a9e-EV-pn2"/>
                             <constraint firstItem="5wF-Ta-Fri" firstAttribute="top" secondItem="AFm-ul-bsr" secondAttribute="top" id="af3-Vu-5TC"/>
                             <constraint firstItem="AFm-ul-bsr" firstAttribute="trailing" secondItem="2Ui-Ws-POd" secondAttribute="trailing" constant="10" id="c3N-KP-g9k"/>
+                            <constraint firstItem="Fek-hH-BBN" firstAttribute="top" secondItem="AkT-n8-L8z" secondAttribute="bottom" constant="40" id="e0R-v1-My1"/>
                             <constraint firstItem="JLb-HH-7Wz" firstAttribute="centerX" secondItem="5hV-Wl-WzW" secondAttribute="centerX" id="fhK-Xn-vN4"/>
                             <constraint firstItem="JLb-HH-7Wz" firstAttribute="top" secondItem="5hV-Wl-WzW" secondAttribute="topMargin" constant="-59" id="hpP-Ng-cyI"/>
                             <constraint firstItem="AkT-n8-L8z" firstAttribute="top" secondItem="JLb-HH-7Wz" secondAttribute="bottom" constant="-81" id="npK-CO-42I"/>
-                            <constraint firstItem="AkT-n8-L8z" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" constant="26" id="sFH-tD-0UZ"/>
+                            <constraint firstItem="AkT-n8-L8z" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" constant="25" id="sFH-tD-0UZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainPageBG" destination="JLb-HH-7Wz" id="zRI-Ay-PBg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LqA-0j-ywT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
