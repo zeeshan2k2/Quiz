@@ -476,10 +476,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K5L-LD-FiQ">
+                                <rect key="frame" x="40.666666666666657" y="433" width="312" height="142"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmC-kl-YU6">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="142"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Science btn" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cm-L1-DD3">
+                                        <rect key="frame" x="160" y="0.0" width="152" height="142"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="geography btn" title=""/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1ew-WV-qOF">
+                                <rect key="frame" x="40.666666666666657" y="571" width="312" height="142"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otj-cX-J3A">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="142"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="sports btn" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJs-cp-hap">
+                                        <rect key="frame" x="160" y="0.0" width="152" height="142"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Biology button" title=""/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AFm-ul-bsr"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="1ew-WV-qOF" firstAttribute="centerX" secondItem="5hV-Wl-WzW" secondAttribute="centerX" id="30q-eR-zQw"/>
                             <constraint firstItem="24d-bs-j2W" firstAttribute="leading" secondItem="ccj-h4-zf8" secondAttribute="trailing" constant="-82.333333333333314" id="4Bj-Oe-AEe"/>
                             <constraint firstItem="AFm-ul-bsr" firstAttribute="trailing" secondItem="24d-bs-j2W" secondAttribute="trailing" constant="25" id="5Mc-rZ-ra7"/>
                             <constraint firstItem="Fek-hH-BBN" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" constant="39" id="9Qv-xq-xeP"/>
@@ -488,6 +519,8 @@
                             <constraint firstItem="AkT-n8-L8z" firstAttribute="leading" secondItem="zOm-Bx-gRS" secondAttribute="trailing" constant="-85.333333333333343" id="GAX-2H-iNr"/>
                             <constraint firstItem="AFm-ul-bsr" firstAttribute="bottom" secondItem="JLb-HH-7Wz" secondAttribute="bottom" constant="550" id="GKb-e5-Rsx"/>
                             <constraint firstItem="JLb-HH-7Wz" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" id="Hgk-dO-83S"/>
+                            <constraint firstItem="K5L-LD-FiQ" firstAttribute="top" secondItem="Fek-hH-BBN" secondAttribute="bottom" constant="20.333333333333314" id="IMG-IE-Wog"/>
+                            <constraint firstItem="K5L-LD-FiQ" firstAttribute="centerX" secondItem="5hV-Wl-WzW" secondAttribute="centerX" id="LQk-Lh-bvQ"/>
                             <constraint firstItem="24d-bs-j2W" firstAttribute="top" secondItem="ccj-h4-zf8" secondAttribute="bottom" constant="-97" id="Sar-Kj-CV1"/>
                             <constraint firstItem="2Ui-Ws-POd" firstAttribute="top" secondItem="AFm-ul-bsr" secondAttribute="top" id="Uki-zR-VXc"/>
                             <constraint firstItem="AkT-n8-L8z" firstAttribute="top" secondItem="zOm-Bx-gRS" secondAttribute="bottom" constant="-97" id="a9e-EV-pn2"/>
@@ -497,6 +530,7 @@
                             <constraint firstItem="JLb-HH-7Wz" firstAttribute="centerX" secondItem="5hV-Wl-WzW" secondAttribute="centerX" id="fhK-Xn-vN4"/>
                             <constraint firstItem="JLb-HH-7Wz" firstAttribute="top" secondItem="5hV-Wl-WzW" secondAttribute="topMargin" constant="-59" id="hpP-Ng-cyI"/>
                             <constraint firstItem="AkT-n8-L8z" firstAttribute="top" secondItem="JLb-HH-7Wz" secondAttribute="bottom" constant="-81" id="npK-CO-42I"/>
+                            <constraint firstItem="1ew-WV-qOF" firstAttribute="top" secondItem="K5L-LD-FiQ" secondAttribute="bottom" constant="-4" id="qiz-ZE-yuI"/>
                             <constraint firstItem="AkT-n8-L8z" firstAttribute="leading" secondItem="AFm-ul-bsr" secondAttribute="leading" constant="25" id="sFH-tD-0UZ"/>
                         </constraints>
                     </view>
@@ -529,16 +563,20 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Biology button" width="128" height="128"/>
         <image name="Create Quiz" width="150" height="150"/>
         <image name="Join in Quiz" width="150" height="150"/>
+        <image name="Science btn" width="128" height="128"/>
         <image name="blue bg" width="360" height="194"/>
         <image name="edit button" width="30" height="30"/>
+        <image name="geography btn" width="128" height="128"/>
         <image name="main page bg" width="360" height="238"/>
         <image name="menu button" width="38" height="38"/>
         <image name="notif button" width="38" height="38"/>
         <image name="quiz game logo" width="150" height="150"/>
         <image name="share bg" width="360" height="800"/>
         <image name="share close btn" width="38" height="38"/>
+        <image name="sports btn" width="128" height="128"/>
         <systemColor name="separatorColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
